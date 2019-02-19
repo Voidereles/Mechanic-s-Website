@@ -25,6 +25,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 400px;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 main {
@@ -51,7 +53,7 @@ main {
 }
 
 .logo img {
-    max-width: 10rem;
+    max-width: 13rem;
 }
 
 nav {
@@ -190,32 +192,8 @@ footer {
     grid-column: 2;
     grid-row: 2;
     background: #0841aa;
-    color:#ebebeb;
 }
 
-footer p {
-    transform: translateY(100%)
-}
-/*
-@keyframes moveDown
-{
-from {margin-top: 0;}
-to {sc: -20px;}
-}
-
-@-webkit-keyframes moveDown 
-{
-from {margin-top: 0;}
-to {margin-top: -20px;}
-}
-
-.uslugi
-{
-animation: moveDown 3s;
--webkit-animation: moveDown 3s; 
-}
-
-*/
 
 @media only screen and (min-width: 1200px) {
     body {
@@ -291,8 +269,6 @@ animation: moveDown 3s;
 }
 
 
-
-
 @media only screen and (orientation: portrait) and (max-width: 600px) {
 
     main,
@@ -300,6 +276,10 @@ animation: moveDown 3s;
     footer,
     .panel {
         min-width: 1px;
+    }
+    
+    nav a {
+        font-size:75%;
     }
 
     main {
@@ -330,6 +310,10 @@ animation: moveDown 3s;
         grid-template-columns: 1fr;
         grid-gap: 0px;
         grid-template-rows: auto;
+    }
+    
+    .call a {
+        font-size:75%;
     }
 
 }
