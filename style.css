@@ -37,13 +37,9 @@ main {
     padding: 15vh 5vw 15vh 5vw;
     font-size: 1.3em;
     min-width: 500px;
-    height: auto;
 }
 
 .content {
-    overflow-y: auto;
-    max-height: 80vh;
-    height: auto;
 }
 
 .logo {
@@ -103,7 +99,6 @@ header ul {
     transition: width .3s;
 }
 
-
 .heading {
     font-size: 2em;
     margin-bottom: 1em;
@@ -138,7 +133,6 @@ header ul {
     color: #0841aa;
     letter-spacing: 1px;
 }
-
 
 .listauslug {
     display: grid;
@@ -175,11 +169,13 @@ header ul {
     cursor: pointer
 }
 
+.bold {
+    font-weight: 700;
+}
+
 aside {
     grid-column: 1;
     grid-row: 2;
-    align-self: center;
-    justify-self: center;
 }
 
 aside a {
@@ -189,22 +185,41 @@ aside a {
 }
 
 footer {
+    color:white;
     grid-column: 2;
     grid-row: 2;
     background: #0841aa;
 }
 
+footer p {
+    transform: translateY(100%);
+}
 
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 1025px) {
     body {
-        grid-template-columns: 3fr 5fr;
+        grid-template-columns: 35vw auto;
+    }
+    
+    header, aside {
+        width:35vw;
+        position: fixed;
+    }
+    
+    header {
+        height:100%;
     }
 
     nav {
         margin-top: 50px;
     }
+    
+    aside {
+        bottom:0;
+        margin-bottom:15px;
+    }
+    
 }
-
 
 
 @media only screen and (orientation: landscape) and (max-height: 768px) {

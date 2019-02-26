@@ -6,6 +6,7 @@
          $('#content').html('Ładuję...');
          $('#content').load(subpage);
          return false;
-
      });
+   
  });
+
