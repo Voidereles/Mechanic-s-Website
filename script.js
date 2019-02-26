@@ -10,3 +10,6 @@
    
  });
 
+function login() {
+    alert('Na potrzeby demonstracji projektu usunięte zabezpieczenie.')
+}
